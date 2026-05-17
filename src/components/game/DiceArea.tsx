@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Die from './Die';
-import type { GameState, RowName } from '../../types/game';
+import type { GameState } from '../../types/game';
 import { ROW_LABELS } from '../../constants/game';
 
 interface DiceAreaProps {

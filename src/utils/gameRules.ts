@@ -25,7 +25,7 @@ export function emptyScores(): AllScores {
 export function isCellAvailable(
   col: ColName,
   row: RowName,
-  state: Pick<GameState, 'scores' | 'colPointers' | 'rollCount' | 'announced' | 'directed' | 'manualMode' | 'manualRolls'>,
+  state: Pick<GameState, 'scores' | 'colPointers' | 'rollCount' | 'announced' | 'directed' | 'manualMode' | 'manualRolls' | 'diamondTopPtr' | 'diamondBotPtr' | 'hourglassTopPtr' | 'hourglassBotPtr'>,
 ): boolean {
   if (state.rollCount === 0) return false;
   if (state.scores[col][row] !== null) return false;

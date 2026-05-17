@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import type { LiveTeam, PlayerRoll } from '../../types/live';
 import type { ColName, RowName } from '../../types/game';
-import { COLS, COL_LABELS, ALL_ROWS, ROW_LABELS, DICE_FACES } from '../../constants/game';
-import { calcScore, calcColTotal, calcGrandTotal, topSectionSum, topBonus, middleSectionValue } from '../../utils/scoring';
+import { COLS, COL_LABELS, ROW_LABELS, DICE_FACES } from '../../constants/game';
+import { calcScore, calcColTotal, calcGrandTotal } from '../../utils/scoring';
 import { isCellAvailable } from '../../utils/gameRules';
 import type { GameState } from '../../types/game';
 import Modal from '../ui/Modal';

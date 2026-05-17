@@ -1,7 +1,7 @@
 import { useState, useCallback, useRef } from 'react';
 import type { RealtimeChannel } from '@supabase/supabase-js';
 import { supabase } from '../lib/supabase';
-import type { LiveSession, LivePlayer, LiveTeam, TeamTurn, PlayerRoll, PairingType, SessionFormat } from '../types/live';
+import type { LiveSession, LivePlayer, TeamTurn, PlayerRoll, PairingType, SessionFormat } from '../types/live';
 import type { ColName, RowName } from '../types/game';
 import { generatePairings } from '../utils/pairing';
 import { emptyScores } from '../utils/gameRules';
