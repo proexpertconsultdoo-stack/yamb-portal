@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { -webkit-tap-highlight-color: transparent; }
+  body { @apply font-sans bg-bg text-text1 overflow-x-hidden; }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+@keyframes rollDie {
+  0%   { transform: rotate(0deg) scale(1); }
+  20%  { transform: rotate(-20deg) scale(1.15); }
+  40%  { transform: rotate(15deg) scale(0.9); }
+  60%  { transform: rotate(-10deg) scale(1.1); }
+  80%  { transform: rotate(5deg) scale(0.95); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+.die-rolling { animation: rollDie 0.5s ease; }
+
+@keyframes cellPulse {
+  0%, 100% { background-color: #FFF8E0; }
+  50%       { background-color: #FFE89A; }
+}
+.cell-pulse { animation: cellPulse 1.2s infinite; }
+
+.press-active:active { transform: translateY(3px) scale(0.96); }
